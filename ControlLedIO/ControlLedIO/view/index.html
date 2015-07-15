@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Control LED IO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="centro">
+        <h1>Control LED IO</h1>
+        <h3>Node.JS + socket.io + Johnny-five + Arduino + Visual Studio</h3>
+        <input type="text" class="line" id="ledDelay" name="ledDelay" placeholder="1000">
+        <button class="metro" id="ledSet">Configurar Delay</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io.connect("http://" + document.location.hostname + ":3000"), notif;
+
+        console.log('Iniciado!!!');
+        
+        $('#ledSet').on('click', function () {
+            var tmp = parseInt($('#ledDelay').val(), 10);            
+            socket.emit('led', { delay: tmp });
+            console.log("LED Delay Configurado para: ", tmp);
+        });
+
+    </script>
+</body>
+</html>
