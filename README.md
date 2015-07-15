@@ -36,7 +36,9 @@ Informe o valor em milissegundos no qual o LED deve piscar. Clique em "Configura
 
 # Demonstração
 
-[![ScreenShot](https://github.com/vitormeriat/Control-LED-IO/blob/master/Doc/capa-youtube.jpeg)](https://www.youtube.com/watch?v=PGMgV3cE1VM)
+Clique na imagem para assistir ao vídeo!
+
+[![ScreenShot](https://github.com/vitormeriat/Control-LED-IO/blob/master/Doc/capa-youtube.jpeg)](https://www.youtube.com/watch?v=S2ewQMYJR5I&feature=youtu.be)
 
 ## License
 Licensed under the MIT license.
