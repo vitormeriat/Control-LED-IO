@@ -4,6 +4,8 @@ Control LED IO
 
 Como diria o ditado: "Primeiro acenda um LED, depois domine o mundo!". Sendo assim este é um primeiro exemplo controlando um Arduino via browser tendo como base o socket.io.
 
+http://www.vitormeriat.com.br/control-led-iocontrolando-o-delay-de-um-led-no-arduino-com-node-js-e-socket-io/
+
 ## Módulos utilizados
 
 * johnny-five
